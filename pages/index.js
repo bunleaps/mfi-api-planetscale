@@ -146,7 +146,7 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/microfi");
+  const res = await fetch("https://mfi-api-planetscale.vercel.app/api/microfi");
   const data = await res.json();
 
   return {
